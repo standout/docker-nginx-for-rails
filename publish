@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+docker build --tag standout/nginx-for-rails:latest --tag standout/nginx-for-rails:$1 .
+
+docker push standout/nginx-for-rails:latest
+docker push standout/nginx-for-rails:$1
