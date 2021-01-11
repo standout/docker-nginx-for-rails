@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-docker build --tag standout/nginx-for-rails:latest --tag standout/nginx-for-rails:$1 .
+docker build --tag ghcr.io/standout/nginx-for-rails:latest --tag ghcr.io/standout/nginx-for-rails:$1 .
 
-docker push standout/nginx-for-rails:latest
-docker push standout/nginx-for-rails:$1
+docker push ghcr.io/standout/nginx-for-rails:latest
+docker push ghcr.io/standout/nginx-for-rails:$1
